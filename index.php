@@ -29,6 +29,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="?m=siswa">siswa</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?m=mata_diklat">mata_diklat</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -48,6 +51,9 @@
                     break;
                 case 'siswa':
                     include 'siswa/index.php';
+                    break;
+                case 'mata_diklat':
+                    include 'mata_diklat/index.php';
                     break;
                 default:
                     include 'home.php';

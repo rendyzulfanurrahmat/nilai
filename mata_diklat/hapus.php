@@ -1,18 +1,16 @@
 <?php
-if(isset($_POST['simpan'])){
+if(isset($_GET['id'])){
     include_once('koneksi.php');
-    $mata_diklat = $_POST['mata_diklat'];
-    $sks    = $_POST['sks'];
-    
+    $id = $_GET['id'];
 
-    $sql="INSERT INTO mata_diklat SET mata_diklat='$mata_diklat', sks='$sks' ";
+    $sql="DELETE FROM mata_diklat WHERE id='$id'";
     $simpan=mysqli_query($koneksi, $sql);
     if($simpan) {
         header('location:index.php');
     } else {
         include "index.php?m=mata_diklat=";
         echo 'script language="JavaScipt">';
-        echo 'alert("data gagal ditambahkan")';
+        echo 'alert("data gagal dihapus")';
         echo '</script>';
     }
 } else {
