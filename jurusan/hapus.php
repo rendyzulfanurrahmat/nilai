@@ -3,7 +3,7 @@ if(isset($_GET['id'])){
     include_once('koneksi.php');
     $id = $_GET['id'];
 
-    $sql="DELETE DROM jurusan WHERE id='$id'";
+    $sql="DELETE FROM jurusan WHERE id='$id'";
     $simpan=mysqli_query($koneksi, $sql);
     if($simpan) {
         header('location:index.php');

@@ -9,16 +9,17 @@
         <div class="col">
         <form action="?m=siswa&s=simpan" method="post">
             <div class="mb-2">
-                <label for="">nama siswa</label>
-                <input type="text" name="nama_siswa" class="form-control" autofocus>
+                <label for="">no induk santri</label>
+                <input type="number" name="santri class="form-control" required autofocus>
             </div>
             <div class="mb-2">
-                <label for="">kapasitas</label>
-                <input type="number" name="kapasitas" class="form-control">
+                <label for="">nama santri</label>
+                <input type="text" name="kapasitas" class="form-control" required>
             </div>
             <div class="mb-2">
-                <label for="">terisi</label>
-                <input type="number" name="terisi" class="form-control">
+                <label for="">jenis kelamin</div></label>&nbsp;
+                <input type="radio" name="jk" value="L" checked >laki-laki &nbsp;
+                <input type="radio" name="jk" value="P">perempuan
             </div>
             <div class="mb-2">
                 <input type="reset"class="btn btn-warning">
